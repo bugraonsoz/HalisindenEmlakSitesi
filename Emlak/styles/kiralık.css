@@ -1,0 +1,397 @@
+:root {
+    --anatemarenk: rgb(57, 135, 180);
+    /*beyaz tema*/
+    --temarenk2: rgb(49, 79, 97);
+    /*siyah tema*/
+    --border: 0.1rem solid rgba(255, 255, 255, 0, 3)
+}
+
+* {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #b3b3b3;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.btn:hover{
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.header .logo img {
+    height: 8rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 1);
+    position: relative;
+    top: 0.8rem;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-weight: 200;
+    margin: 0 8rem;
+    font-size: 1.6rem;
+    color: black;
+    /* bu satırı altındaki sınıfta 
+     tanımlasaydık görüntü animasyonlu değil düz bir şekilde 
+     gelecekti ve bu satırı kaldırırsak, hangi menüye hedef
+     aldığımızı göremeyiz.*/
+}
+@media (max-width:773px){
+    .navbar a{
+        margin: 0 1rem;
+    }
+}
+@media (max-width:1181px){
+    .navbar a{
+        margin: 0 2rem;
+    }
+}
+@media (max-width:1600px){
+    .navbar a{
+        margin: 0 5rem;
+    }
+}
+@media (max-width:1473px){
+    .navbar a{
+        margin: 0 2rem;
+    }
+}
+
+.menu-btn {
+    top: 38%;
+    right: 5%;
+    position: absolute;
+    font-size: 2.8rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:838px) {
+   .menu-btn{
+        display: inline-flex;
+    }
+    .navbar {
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    width: 10%;
+    height: 15rem;
+    overflow: hidden;
+    background-color: white;
+    transition: .3s ease;
+   }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    color: var(--anatemarenk);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+
+#menu-btn {
+    display: none;
+} 
+
+.container1{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3b3b3;
+}
+.Daire1{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: -20px 0;
+    overflow: hidden;
+}
+.Daire1 .ilkdaireresim1{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+}
+.Daire1 .ilkdaireresim2{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire1 .ilkdaireresim3{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire1 .ilkdaireresim4{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire1 .ilkdaireresim5{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+
+.Daire1 .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide h4{
+    font-size: 18px;
+}
+.slide p{
+    text-align: center;
+    padding: 0 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .para{
+    margin-bottom: 3rem;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .odatürü{
+    margin-left: 42rem;
+    font-size: 20px;
+    color: #333;
+    font-weight: 900;
+}
+
+.container2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3b3b3;
+}
+.Daire2{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: -20px 0;
+    overflow: hidden;
+}
+.Daire2 .ikincidaireresim1{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+}
+.Daire2 .ikincidaireresim2{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire2 .ikincidaireresim3{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire2 .ikincidaireresim4{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire2 .ikincidaireresim5{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+
+.Daire2 .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide h4{
+    font-size: 18px;
+}
+.slide p{
+    text-align: center;
+    padding: 0 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .para{
+    margin-bottom: 3rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .odatürü{
+    margin-left: 42rem;
+    font-size: 20px;
+    color: #333;
+    font-weight: 900;
+}
+
+.container3{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3b3b3;
+}
+.Daire3{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: -20px 0;
+    overflow: hidden;
+}
+.Daire3 .ucuncudaireresim1{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+}
+.Daire3 .ucuncudaireresim2{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire3 .ucuncudaireresim3{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire3 .ucuncudaireresim4{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+.Daire3 .ucuncudaireresim5{
+    height: 500px;
+    width: 700px;
+    object-fit: cover;
+    margin-left: 12rem;
+}
+
+.Daire3 .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.slide h4{
+    font-size: 18px;
+}
+.slide p{
+    text-align: center;
+    padding: 0 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .para{
+    margin-bottom: 3rem;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.details .odatürü{
+    margin-left: 42rem;
+    font-size: 20px;
+    color: #333;
+    font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+    .slide p{
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/survey.css">
+    <title>Memnuniyet Anketi</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="logo">
+        </a>
+    </header>
+    <form>
+        <table class="table1">
+            <tr>
+                <th>
+                    <div class="form-question">
+                        <div class="yazi">
+                            <label>İsim Soyisim:</label>
+                        </div>
+                    </div>
+                    <th>
+                        <input type="text" id="fullname">
+                    </th>
+                </th>
+                <th>
+                    <div class="form-question">
+                        <div class="yazi">
+                            <label>Tarih:</label>
+                        </div>
+                    </div>
+                    <th>
+                        <input type="date" id="tarih">
+                    </th>
+                </th>
+                <th>
+                    <div class="form-question">
+                        <div class="yazi">
+                            <label>Gmail:</label>
+                        </div>
+                    </div>
+                    <th>
+                        <input type="email" id="eposta">
+                    </th>
+                </th>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr>
+                <th class="baslik">Sorular</th>
+                <th class="baslik">Kesinlikle Katılıyorum</th>
+                <th class="baslik">Katılıyorum</th>
+                <th class="baslik">Kararsızım</th>
+                <th class="baslik">Katılmıyorum</th>
+                <th class="baslik">Kesinlikle Katılmıyorum</th>
+            </tr>
+            <tr>
+                <td class="sorular">Firmamız/ Markamız hakkındaki düşünceleriniz iyi mi?</td>
+                <td><input type="radio" name="cevap1"></td>
+                <td><input type="radio" name="cevap1"></td>
+                <td><input type="radio" name="cevap1"></td>
+                <td><input type="radio" name="cevap1"></td>
+                <td><input type="radio" name="cevap1"></td>
+            </tr>
+            <tr>
+                <td class="sorular">Firmamızı / Markamızı yakınınıza veya bir başkasına tavsiye eder miydiniz?</td>
+                <td><input type="radio" name="cevap2"></td>
+                <td><input type="radio" name="cevap2"></td>
+                <td><input type="radio" name="cevap2"></td>
+                <td><input type="radio" name="cevap2"></td>
+                <td><input type="radio" name="cevap2"></td>
+            </tr>
+            <tr>
+                <td class="sorular">Piyasaya koyduğumuz ürünler veya hizmetler beklentinizi karşıladı mı?</td>
+                <td><input type="radio" name="cevap3"></td>
+                <td><input type="radio" name="cevap3"></td>
+                <td><input type="radio" name="cevap3"></td>
+                <td><input type="radio" name="cevap3"></td>
+                <td><input type="radio" name="cevap3"></td>
+            </tr>
+            <tr>
+                <td class="sorular">Piyasaya koyduğumuz ürünlerin veya hizmetlerin ulaşılabilirlik durumunun yeterli olduğunu düşünüyor musunuz?</td>
+                <td><input type="radio" name="cevap4"></td>
+                <td><input type="radio" name="cevap4"></td>
+                <td><input type="radio" name="cevap4"></td>
+                <td><input type="radio" name="cevap4"></td>
+                <td><input type="radio" name="cevap4"></td>
+            </tr>
+            <tr>
+                <td class="sorular">Firmamızın / Markamızın sizin için değer yarattığını düşünüyor musunuz?</td>
+                <td><input type="radio" name="cevap5"></td>
+                <td><input type="radio" name="cevap5"></td>
+                <td><input type="radio" name="cevap5"></td>
+                <td><input type="radio" name="cevap5"></td>
+                <td><input type="radio" name="cevap5"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="textarea-container">
+                    <div class="add">
+                        <label>Eklemek İstedikleriniz</label>
+                    </div>
+                    <textarea class="textarea" id="ekle" cols="90" rows="10"></textarea>
+                    <!--Misafirin siteye yazacaklarını sınırlıyoruz. -->
+                </td>
+                <th class="table3">
+                    <div class="btnposition">
+                        <button class="postbtn" type="submit">Gönder</button>
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+:root {
+    --anatemarenk: rgb(57, 135, 180);
+    /*beyaz tema*/
+    --temarenk2: rgb(49, 79, 97);
+    /*siyah tema*/
+    --border: 0.1rem solid rgba(255, 255, 255, 0, 3)
+}
+
+* {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #62c062;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    background-color: rgb(238, 39, 39);
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    font-weight: bold;
+    transition: all 0.2s;
+    font-size: 1.75rem;
+}
+
+.header .logo img {
+    height: 8rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 1);
+    position: relative;
+    top: 0.8rem;
+    z-index: 1000;
+}
+
+.navbar a {
+    font-weight: 200;
+    margin: 0 11rem;
+    font-size: 1.6rem;
+    color: black;
+    /* bu satırı altındaki sınıfta 
+     tanımlasaydık görüntü animasyonlu değil düz bir şekilde 
+     gelecekti ve bu satırı kaldırırsak, hangi menüye hedef
+     aldığımızı göremeyiz.*/
+}
+@media (max-width:773px){
+    .navbar a{
+        margin: 0 1rem;
+    }
+}
+@media (max-width:1181px){
+    .navbar a{
+        margin: 0 2rem;
+    }
+}
+@media (max-width:1600px){
+    .navbar a{
+        margin: 0 5rem;
+    }
+}
+@media (max-width:1473px){
+    .navbar a{
+        margin: 0 2rem;
+    }
+}
+
+.menu-btn {
+    top: 38%;
+    right: 5%;
+    position: absolute;
+    font-size: 2.8rem;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:838px) {
+   .menu-btn{
+        display: inline-flex;
+    }
+    .navbar {
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    width: 10%;
+    height: 15rem;
+    overflow: hidden;
+    background-color: white;
+    transition: .3s ease;
+   }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+}
+.header .navbar .active,
+.header .navbar a:hover {
+    color: var(--anatemarenk);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+
+#menu-btn {
+    display: none;
+}
+
+.home {
+    min-height: 102.5vh;
+    background: url(../slogan.png) no-repeat;
+    background-size: 60rem;
+    /*arkaplan resmini görünen sayfaya tam sığdırır.*/
+    background-position: 50% 60rem;
+    margin-top: -14rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Merriweather', serif;
+    margin-left: 61rem;
+    margin-top: -18rem;
+    font-size: 7rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    font-weight: 300px;
+    line-height: 1.4;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    margin-left: 50rem;
+    color: rgb(0, 0, 0);
+}
